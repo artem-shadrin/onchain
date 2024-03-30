@@ -12,17 +12,46 @@
                 <img class="logo" src="./images/logo.svg" width="136" height="32" alt="ONCHAIN">
             </div>
             <nav class="header__nav">
-                <ul class="nav-list">
+                <ul data-nav-list class="nav-list">
                     <li class="nav-list__item"><a href="#" class="nav-list__link">Roadmap</a></li>
                     <li class="nav-list__item"><a href="#" class="nav-list__link">Airdrop</a></li>
                     <li class="nav-list__item"><a href="#" class="nav-list__link">Onchain game</a></li>
                     <li class="nav-list__item"><a href="#" class="nav-list__link">Warpcast</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">Join</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link active-gradient">Join</a></li>
                 </ul>
+                <div class="nav-list__burger">
+                    <button id="burger-button" class="burger-button ">
+                        <span class="burger-button__line"></span>
+                        <span class="burger-button__line"></span>
+                        <span class="burger-button__line"></span>
+                    </button>
+                </div>
             </nav>
         </div>
     </div>
 </header>
+<nav id="burger-menu" class="burger-menu">
+    <ul data-nav-list class="burger-menu__list">
+        <li class="burger-menu__item"><a href="#" class="burger-menu__link">Roadmap</a></li>
+        <li class="burger-menu__item"><a href="#" class="burger-menu__link">Airdrop</a></li>
+        <li class="burger-menu__item"><a href="#" class="burger-menu__link">Onchain game</a></li>
+        <li class="burger-menu__item"><a href="#" class="burger-menu__link">Warpcast</a></li>
+    </ul>
+    <div class="burger-menu__bottom">
+        <ul class="links">
+            <li class="links__item">
+                <a href="#" class="link"><img src="./images/social/t.svg" width="32" height="32" alt="t"></a>
+            </li>
+            <li class="links__item">
+                <a href="#" class="link"><img src="./images/social/w.svg" width="32" height="32" alt="w"></a>
+            </li>
+            <li class="links__item">
+                <a href="#" class="link"><img src="./images/social/x.svg" width="32" height="32" alt="x"></a>
+            </li>
+        </ul>
+        <a href="#" class="burger-menu__join active-gradient">Join</a>
+    </div>
+</nav>
 <main>
     <section class="section-1">
         <div class="container--wide">
