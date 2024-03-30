@@ -1,10 +1,13 @@
 .board {
-  padding-top: 72px;
   background-image: url('../images/bg7.png') ;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center 300px  ;
-
+  padding-top: 72px;
+  background-size: 100% 50%;
+  background-position: center bottom;
+  @include media('lg'){
+    background-size: contain;
+    background-position: center;
+  }
   &__inner {
     display: grid;
     gap: 72px;
