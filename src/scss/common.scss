@@ -109,3 +109,24 @@ ul {
   border-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 199, 0, 0.5) 51%, rgba(153, 153, 153, 0) 100%) 1 !important;
 }
 
+
+/* W3C standard
+   сейчас только для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: white orange;
+}
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: orange;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid orange;
+}
