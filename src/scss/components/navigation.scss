@@ -61,17 +61,25 @@
     border: 1.5px solid rgba(255, 255, 255, 1);
     width: 20px;
     pointer-events: none;
+    transition: transform .3s ease-in-out;
+    &:nth-child(1){
+      transform-origin: left top;
+    }
+    &:nth-child(3){
+      transform-origin: bottom left;
+    }
   }
+  --angle: 49deg;
   &.active &__line{
     &:nth-child(1){
-      transform: rotate(45deg);
+      transform: rotate(var(--angle, 49deg));
       transform-origin: left top;
     }
     &:nth-child(2){
-      opacity: 0;
+      transform: scale(0);
     }
     &:nth-child(3){
-      transform: rotate(-45deg);
+      transform: rotate(calc(-1 * var(--angle, 49deg)));
       transform-origin: bottom left;
     }
   }
@@ -91,6 +99,10 @@
   pointer-events: none;
   transition: all .3s ease-in-out;
   opacity: 0;
+  background-image: url('../images/chains/9.png');
+  background-position: right center;
+  background-size: 100%;
+  background-repeat: no-repeat;
   &.active{
     inset: 80px 0 0 0;
     pointer-events: auto;
@@ -117,21 +129,7 @@
     display:grid;
     gap: 32px;
   }
-  &__join{
-    width: 100%;
-    display: block;
-    text-decoration: none;
-    padding: 16px;
-    text-transform: uppercase;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    color: var(--light);
 
-  }
 
 }
 

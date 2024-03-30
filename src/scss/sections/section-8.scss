@@ -1,7 +1,7 @@
 .section-8 {
   @include media('lg', 'min'){
     background: url("../images/bg7.png") center no-repeat  ;
-    background-size: cover;
+    background-size: contain;
   }
   &__inner{
     display: grid;

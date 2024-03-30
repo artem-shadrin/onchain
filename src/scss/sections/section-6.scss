@@ -10,9 +10,9 @@
     background: url("../images/bg6-desktop.svg") center no-repeat;
     background-size: contain;
     @include media('lg') {
-      background: url("../images/bg6-mobile.svg") no-repeat ;
+      background: url("../images/bg6-mobile.svg") no-repeat;
       background-position-x: calc(50% + 100px);
-      background-position-y: 190px;
+      background-position-y: 208px;
     }
   }
 
@@ -21,7 +21,7 @@
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(3,300px);
+  grid-template-columns: repeat(3, 300px);
   justify-content: space-between;
   gap: 24px;
   grid-template-rows: min-content;
@@ -29,11 +29,14 @@
     gap: 144px;
     justify-content: center;
     grid-template-columns: 300px;
+    grid-template-rows: 316px 326px 326px;
   }
+
   &__item {
     max-width: 263px;
     background: linear-gradient(143.07deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 50.98%, rgba(255, 255, 255, 0.06) 99.95%);
-     &:nth-child(2){
+
+    &:nth-child(2) {
       justify-self: right;
     }
   }
@@ -41,7 +44,10 @@
 
 .step {
   padding: 24px;
-  &__text{
+  height: 100%;
+  box-sizing: border-box;
+
+  &__text {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;

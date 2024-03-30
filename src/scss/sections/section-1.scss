@@ -1,6 +1,7 @@
 .section-1{
-  @include media('md', 'min'){
-    margin-top: -80px;
+  margin-top: -80px;
+  @include media('md'){
+    margin-top: 0;
   }
 
   &__inner{
@@ -12,13 +13,27 @@
       padding-top: 52px;
     }
   }
-  &__title{
+  &__content{
     position: absolute;
     z-index: 100;
     top: 150px;
     @include media('md') {
       top: 28px;
     }
+    display: grid;
+    align-items: center;
+    gap: 32px;
+
+    .join{
+      display: none;
+      @include media('lg'){
+        display: block;
+      }
+    }
+
+  }
+  &__title{
+
   }
 
 
