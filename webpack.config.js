@@ -48,6 +48,10 @@ module.exports = {
             template: path.join(__dirname, 'src', 'index.html'),
             filename: 'index.html',
         }),
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, 'src', 'leaderboard.html'),
+            filename: 'leaderboard.html',
+        }),
         new FileManagerPlugin({
             events: {
                 onStart: {

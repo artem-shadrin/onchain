@@ -4,9 +4,7 @@
 
 @import "normalize";
 @import "common";
-.hide{
-  display: none;
-}
+@import "board";
 @import "sections/section-1";
 @import "sections/section-2";
 @import "sections/section-3";
