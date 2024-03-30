@@ -33,9 +33,7 @@
   &__item {
     max-width: 263px;
     background: linear-gradient(143.07deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 50.98%, rgba(255, 255, 255, 0.06) 99.95%);
-    border: 1px solid;
-    border-image-source: linear-gradient(72.18deg, rgba(255, 255, 255, 0.21) 0%, rgba(255, 255, 255, 0) 12%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.12) 48.5%, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 0) 88.5%, rgba(255, 255, 255, 0.17) 100%);
-    &:nth-child(2){
+     &:nth-child(2){
       justify-self: right;
     }
   }
