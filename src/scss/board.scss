@@ -1,5 +1,9 @@
 .board {
   padding-top: 72px;
+  background-image: url('../images/bg7.png') ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 300px  ;
 
   &__inner {
     display: grid;
@@ -38,7 +42,7 @@
 
   &__table-wrapper {
     overflow: auto;
-    max-height: 270px;
+    max-height: 470px;
     border: 1px solid;
     border-image: linear-gradient(72.18deg, rgba(255, 255, 255, 0.21) 0%, rgba(255, 255, 255, 0) 12%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.12) 48.5%, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 0) 88.5%, rgba(255, 255, 255, 0.17) 100%) 1;
     background: rgba(255, 255, 255, 0.06);
@@ -63,6 +67,7 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      font-family: 'Poppins', sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 22px;
