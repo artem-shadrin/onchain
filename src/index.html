@@ -8,10 +8,10 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <div class="logo">
-                <img src="./images/logo.svg" width="136" height="32" alt="ONCHAIN">
+            <div class="header__logo">
+                <img class="logo" src="./images/logo.svg" width="136" height="32" alt="ONCHAIN">
             </div>
-            <nav>
+            <nav class="header__nav">
                 <ul class="nav-list">
                     <li class="nav-list__item"><a href="#" class="nav-list__link">Roadmap</a></li>
                     <li class="nav-list__item"><a href="#" class="nav-list__link">Airdrop</a></li>
@@ -24,7 +24,7 @@
     </div>
 </header>
 <main>
-    <section class="section-1">
+    <section class="section-1 hide">
         <div class="container--wide">
             <h1 class="section-1__title text-gradient">
                 THE FUTURE IS
@@ -68,7 +68,7 @@
             </div>
         </div>
     </section>
-    <section class="section-4">
+    <section class="section-4 hide">
         <div class="container">
             <div class="section-4__inner">
                 <h3 class="section-4__title text-gradient">Base score incorporates the following criteria:</h3>
@@ -84,10 +84,10 @@
             </div>
         </div>
     </section>
-    <section class="section-5">
+    <section class="section-5 hide">
         <div class="container--wide">
-            <img src="./images/chains/6.png" alt="a" width="322" height="367">
-            <img src="./images/chains/21.png" alt="b" width="388" height="399">
+            <img class="section-5__chain section-5__chain--left" src="./images/chains/6.png" alt="a" width="322"
+                 height="367">
             <div class="container">
                 <div class="section-5__inner">
                     <h2 class="section-5__title">
@@ -107,9 +107,11 @@
                     </div>
                 </div>
             </div>
+            <img class="section-5__chain section-5__chain--right" src="./images/chains/21.png" alt="b" width="388"
+                 height="399">
         </div>
     </section>
-    <section class="section-6">
+    <section class="section-6 hide">
         <div class="container">
             <div class="section-6__inner">
                 <ul class="steps">
@@ -143,75 +145,96 @@
             </div>
         </div>
     </section>
-    <section class="section-7">
+    <section class="section-7 hide">
         <div class="container">
             <div class="section-7__inner">
                 <h2 class="section-7__title">partners & advisors</h2>
                 <ul class="partners-list">
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
-                    <li class="partners-list__item">
-                        <div class="partner"><span class="partner__logo"></span><span
-                                class="partner__caption">Logo</span>
-                        </div>
+                    <li class="partner">
+                        <span class="partner__logo"></span>
+                        <span class="partner__caption">Logo</span>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
+    <section class="section-8 hide">
+        <div class="container">
+            <div class="section-8__inner">
+                <h2 class="section-8__title h1 text-gradient">
+                    $onchian score & game will keep evolving as part of $onchain and
+                    its key products after launch
+                </h2>
+                <div class="section-8__img">
+                    <img src="./images/phone2.png" alt="phone2" width="1176" height="1304">
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <h2 class="footer__title">
+                bringing the world $onhcain
+            </h2>
+            <ul class="links">
+                <li class="links__item">
+                    <a href="#" class="link"><img src="./images/social/t.svg" width="32" height="32" alt="t"></a>
+                </li>
+                <li class="links__item">
+                    <a href="#" class="link"><img src="./images/social/w.svg" width="32" height="32" alt="w"></a>
+                </li>
+                <li class="links__item">
+                    <a href="#" class="link"><img src="./images/social/x.svg" width="32" height="32" alt="x"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
   &__inner {
     display: grid;
     gap: 80px;
-    @media screen and (max-width: 768px) {
+    @include media('md') {
       gap: 60px;
     }
   }

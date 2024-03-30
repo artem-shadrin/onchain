@@ -1,22 +1,45 @@
-.section-3 {
-
+.section-5 {
+  .container--wide{
+    position: relative;
+  }
+  &__title{
+    margin: 0;
+  }
   &__inner {
     display: grid;
-    gap: 80px;
-    @media screen and (max-width: 768px) {
-      gap: 60px;
+    gap: 16px;
+    padding-block: 72px ;
+    align-items: center;
+    justify-content: center;
+    @include media('md'){
+      padding-block: 110px;
     }
   }
 
-  &__title {
-    text-align: left;
-  }
-
   &__text {
-    text-transform: uppercase;
     font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
-    letter-spacing: calc(1em / 25);
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 604px;
+    @include media('md'){
+      text-align: left;
+    }
+  }
+  &__chain{
+    position: absolute;
+    height: auto;
+    width: 300px;
+    &--left{
+      left: 0;
+      top: 0;
+    }
+    &--right{
+      right: 0;
+      bottom: -59px;
+    }
   }
 }
 

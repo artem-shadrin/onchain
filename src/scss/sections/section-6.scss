@@ -3,7 +3,7 @@
   &__inner {
     display: grid;
     gap: 80px;
-    @media screen and (max-width: 768px) {
+    @include media('md') {
       gap: 60px;
     }
   }
@@ -17,7 +17,7 @@
   justify-content: space-between;
   gap: 24px;
   grid-template-rows: max-content;
-  @media screen and (max-width: 768px) {
+  @include media('md') {
     grid-template-columns: repeat(auto-fill, 265px);
 
   }

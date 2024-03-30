@@ -1,0 +1,27 @@
+.section-8 {
+  background: url("../images/bg7.png") center no-repeat  ;
+  background-size: cover;
+  &__inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include media('md') {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__title {
+    max-width: 600px;
+    text-align: left;
+    padding-block: 22px;
+    @include media('md') {
+      padding-block: 0;
+      margin: 0;
+    }
+  }
+  &__img{
+    @include media('md') {
+      margin-top: -10px;
+    }
+  }
+
+
+}
