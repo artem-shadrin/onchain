@@ -4,7 +4,6 @@ html {
   color: var(--font-color);
   font-family: 'Poppins', sans-serif;
   background-color: var(--dark);
-  padding-bottom: 72px;
 }
 body{
   @include media('lg'){
@@ -49,7 +48,7 @@ img {
   text-align: center;
   color: var(--light);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 199, 0, 0.06) 51%, rgba(153, 153, 153, 0) 100%);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(15px);
 }
 h1, .h1 {
   font-size: 72px;
@@ -60,7 +59,7 @@ h1, .h1 {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  @include media('md') {
+  @include media('lg') {
     font-size: 32px;
     line-height: 32px;
   }
@@ -111,6 +110,10 @@ ul {
   border-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 199, 0, 0.5) 51%, rgba(153, 153, 153, 0) 100%) 1 !important;
 }
 
+.ticker{
+  display: flex;
+  justify-content: center;
+}
 
 /* W3C standard
    сейчас только для Firefox */

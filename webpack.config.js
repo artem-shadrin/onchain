@@ -10,7 +10,6 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: 'index.[contenthash].js',
         assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
-        clean: true
     },
     module: {
         rules: [
@@ -55,6 +54,9 @@ module.exports = {
         }),
         new FileManagerPlugin({
             events: {
+                onStart: {
+                    delete: ['dist'],
+                },
                 onEnd: {
                     copy: [
                         {
@@ -62,7 +64,7 @@ module.exports = {
                             destination: 'dist',
                         },
                     ],
-                },
+                }
             },
         }),
         new MiniCssExtractPlugin({

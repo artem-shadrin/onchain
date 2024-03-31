@@ -11,7 +11,7 @@
     background-size: contain;
     @include media('lg') {
       background: url("../images/bg6-mobile.svg") no-repeat;
-      background-position-x: calc(50% + 100px);
+      background-position-x: calc(50% + 87px);
       background-position-y: 208px;
     }
   }
@@ -21,23 +21,31 @@
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 305px);
   justify-content: space-between;
   gap: 24px;
   grid-template-rows: min-content;
   @include media('lg') {
     gap: 144px;
-    justify-content: center;
-    grid-template-columns: 300px;
+    grid-template-columns: 1fr;
     grid-template-rows: 316px 326px 326px;
   }
 
   &__item {
-    max-width: 263px;
     background: linear-gradient(143.07deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 50.98%, rgba(255, 255, 255, 0.06) 99.95%);
 
-    &:nth-child(2) {
-      justify-self: right;
+    @include media('lg'){
+      max-width: 263px;
+      &:nth-child(2) {
+        justify-self: left;
+      }
+      &:nth-child(2) {
+        justify-self: right;
+      }
+      &:nth-child(3) {
+        justify-self: center;
+      }
+
     }
   }
 }
@@ -46,7 +54,16 @@
   padding: 24px;
   height: 100%;
   box-sizing: border-box;
-
+  text-transform: uppercase;
+  &__title{
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    @include media('lg'){
+      white-space: unset;
+      text-align: left;
+    }
+  }
   &__text {
     font-size: 14px;
     font-weight: 400;

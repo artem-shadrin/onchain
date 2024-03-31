@@ -1,19 +1,20 @@
-.section-1{
+.section-1 {
   margin-top: -80px;
-  @include media('md'){
+  @include media('md') {
     margin-top: 0;
   }
 
-  &__inner{
+  &__inner {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    @include media('md'){
+    @include media('lg') {
       padding-top: 52px;
     }
   }
-  &__content{
+
+  &__content {
     position: absolute;
     z-index: 100;
     top: 150px;
@@ -24,19 +25,67 @@
     align-items: center;
     gap: 32px;
 
-    .join{
+    .join {
       display: none;
-      @include media('lg'){
+      @include media('lg') {
         display: block;
       }
     }
 
   }
-  &__title{
 
+  &__chain-1 {
+    pointer-events: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 240;
+    object-fit: scale-down;
+    @include media('lg') {
+      max-width: 250px;
+      object-position: -59px -32px;
+    }
   }
 
+  &__background {
+    pointer-events: none;
+    margin-bottom: 270px;
+    @include media('lg'){
+      margin-bottom: 0;
+    }
+  }
 
+  &__chain-2 {
+    overflow: hidden;
+    box-sizing: border-box;
+    pointer-events: none;
+    top: 80px;
+    right: 0;
+    position: absolute;
+    z-index: 250;
+    object-fit: scale-down;
+    @include media('lg') {
+      width: 80%;
+      object-position: 50px;
+      overflow: hidden;
+      max-width: 232px;
+    }
+  }
+
+  &__phone {
+    pointer-events: none;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    z-index: 50;
+    width: 80%;
+    @include media('lg'){
+      top: 65px;
+      width: 100%;
+    }
+  }
 
 
 }
