@@ -91,6 +91,18 @@
     position: relative;
     z-index: 50;
     width: 80%;
+    &.desktop{
+      display: block ;
+      @include media('md') {
+        display: none;
+      }
+    }
+    &.mobile{
+      display: none;
+      @include media('md') {
+        display: block ;
+      }
+    }
     @include media('md') {
       top: 65px;
       width: 100%;

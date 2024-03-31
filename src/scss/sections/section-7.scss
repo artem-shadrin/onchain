@@ -4,6 +4,9 @@
   }
   &__title {
     margin-bottom: 32px;
+    @include media('lg'){
+      text-align: left;
+    }
   }
  .partners-list{
    display: grid;

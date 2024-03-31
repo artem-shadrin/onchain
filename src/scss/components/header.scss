@@ -5,7 +5,7 @@
   background-color: #000000D9;
   border-bottom: 1px solid;
   border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 1.88%, rgba(255, 255, 255, 0.4) 49.36%, rgba(255, 255, 255, 0) 96.52%) 1;
-
+  backdrop-filter: blur(2.00509px);
 
   &__inner {
     display: grid;
@@ -15,8 +15,9 @@
     padding-block: 22px;
 
   }
-  &__nav{
-    @include media('lg'){
+
+  &__nav {
+    @include media('lg') {
       justify-self: right;
     }
   }
