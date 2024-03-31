@@ -2,12 +2,10 @@
 
   &__inner {
     display: grid;
-    gap: 80px;
-    background-image: url('../images/bg4-desktop.svg') ;
+    gap: 16px;
 
     @include media('md') {
-      gap: 60px;
-      background-image: url('../images/bg4-mobile.svg') ;
+      gap: 32px;
     }
   }
 
@@ -18,13 +16,18 @@
   align-items: center;
   text-align: center;
   gap: 114px 32px;
-  padding: 26px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  background-image: url('../images/bg4-desktop.svg') ;
+  padding: 63px;
+
+  @include media('md') {
+    background-image: url('../images/bg4-mobile.svg') ;
+  }
   @include media('lg') {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 32px 8px;
-    padding: 0;
+    padding: 26px;
   }
 
   &__item {
