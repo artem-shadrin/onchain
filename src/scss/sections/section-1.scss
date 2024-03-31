@@ -21,28 +21,29 @@
     @include media('md') {
       top: 28px;
     }
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 32px;
+    justify-content: center;
 
     .join {
-      display: none;
-      @include media('lg') {
-        display: block;
-      }
+      max-width: 340px;
     }
 
   }
 
   &__chain-1 {
     pointer-events: none;
-    overflow: hidden;
     top: 0;
     left: 0;
     position: absolute;
     z-index: 240;
     object-fit: scale-down;
     @include media('lg') {
+      object-position: -59px -32px;
+    }
+    @include media('md') {
       max-width: 250px;
       object-position: -59px -32px;
     }
@@ -51,13 +52,18 @@
   &__background {
     pointer-events: none;
     margin-bottom: 270px;
-    @include media('lg'){
+    position: relative;
+    padding-top: 32px;
+
+    @include media('md') {
+      position: static;
+      padding-top: 0;
       margin-bottom: 0;
     }
+
   }
 
   &__chain-2 {
-    overflow: hidden;
     box-sizing: border-box;
     pointer-events: none;
     top: 80px;
@@ -65,10 +71,14 @@
     position: absolute;
     z-index: 250;
     object-fit: scale-down;
+
     @include media('lg') {
+      object-position: right 10vh ;
+      max-width: 40vw;
+    }
+    @include media('md') {
       width: 80%;
       object-position: 50px;
-      overflow: hidden;
       max-width: 232px;
     }
   }
@@ -81,11 +91,9 @@
     position: relative;
     z-index: 50;
     width: 80%;
-    @include media('lg'){
+    @include media('md') {
       top: 65px;
       width: 100%;
     }
   }
-
-
 }
